@@ -1,0 +1,8 @@
+---
+- name: Get facts for all resource groups
+  azure_rm_resourcegroup_info:
+  register: rg_facts
+
+- name: Print debug result
+  ansible.builtin.debug:
+    var: rg_facts.stdout
