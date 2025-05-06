@@ -1,9 +1,0 @@
----
-- name: Get hostname
-  ansible.builtin.command:
-    cmd: uname -n
-  register: debug_result
-
-- name: Print debug result
-  ansible.builtin.debug:
-    var: debug_result.stdout
